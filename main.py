@@ -105,7 +105,8 @@ class subtitle:
 		m = (ms % 3600000) / 60000
 		# secode
 		s = ((ms % 3600000) % 60000) / 1000
-		# milesecond
+		# milesecond - get rid of the last decimal 
+		# point because of the .ass/.ssa format
 		ss = (((ms % 3600000) % 60000) % 1000) / 10
 		return '{}:{:02}:{:02}.{:02}'.format(h, m, s, ss)
 
