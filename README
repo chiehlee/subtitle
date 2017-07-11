@@ -1,0 +1,25 @@
+Chieh Lee July @ 2017
+
+Overview:
+This is a simple piece of codes that helps you to adjust time event (dialogue) for .ass/.ssa files. Please run this on command line and the first argument is necessarily to be the path of your subtitle (.ass/.ssa) file (to be changed). After you launch the app, you will be asked to enter the time stamp of **the first line you want to change**. The time stamp format is strictly be 0:00:00.00. Then you will be asked to enter time stamp that **you wish the time is going to be**. For example if you want to change the first line '0:05:32.21' to '0:01:00.00', then enter these two number. This app will adjust all the dialogue events later than the first you provided based on the difference between the two time stamps you entered. The output file will be in the same directory named 'new_output.ass/new_output.ssa'. The app will work with file encoding of usual ascii and unicode UTF-8 ONLY. It will specifically (currently) not work with UTF-16 and UTF-32. The following provide a basic flow of how to use it.
+
+
+launch main.py '../yourflie.ass' (or .ssa)
+
+v
+
+prompt 'Initial event line to be changed from original .ass or .ssa file (0:00:00.00 format):'
+enter the time stamp of the first dialogue event
+
+v
+
+prompt 'Target time to change for the first event lines (0:00:00.00 format):'
+enter the time stamp for dialogue that you wish to be
+
+v
+
+should be OK!
+
+v
+
+collect your output 'new_output.ass' (or .ssa) in the same directory of this .py
