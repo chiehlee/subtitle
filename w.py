@@ -12,3 +12,6 @@ w = open('Hunter X Hunter 2011 - EP052 [BD 1920x1080 23.976fps AVC-yuv444p10 FLA
 r = w.read()
 k = open('test.ass', 'wb+')
 k.write(' '.join(format(ord(x), '#02x') for x in r))
+
+
+master
