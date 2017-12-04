@@ -1,0 +1,3 @@
+import bluecrystal_beanstalk_common
+
+bluecrystal_beanstalk_common.generate_template("China")
