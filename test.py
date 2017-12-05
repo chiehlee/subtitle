@@ -31,6 +31,7 @@ for line in f:
 #s3 = urllib.urlencode({'key2':s[:-1]}, True)
 
 kkkkkk
+eeee
 
 u = f2.readline()
 st = '\x3b\x00\x20\x00\x2f\x00\x2f\x00\x20\x00\x64\x6b\x57\x5b\x55\x5e'.decode('utf-16')

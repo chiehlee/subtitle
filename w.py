@@ -13,4 +13,3 @@ r = w.read()
 k = open('test.ass', 'wb+')
 k.write(' '.join(format(ord(x), '#02x') for x in r))
 
-gggg
